@@ -35,8 +35,8 @@ class Display {
   }
 
   show(type) {
-    let msg = Document.getElementsByClassName('message')[0];
-    if (Display.validate == true) {
+    let msg = document.getElementById('message')
+    if (type==='Success') {
       msg.innerHTML = `<div class="alert">
      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
       <strong>Success!</strong> your book added sucessfullly 👍
@@ -89,10 +89,10 @@ function libFormBtn(e) {
 
     display.add(book);
     display.clear();
-    display.show()
+    display.show('Success')
   }
   else {
     // Show error to the user
-    display.show();
+    display.show('error');
   }
 }
