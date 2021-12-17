@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Welcome To jeet's library</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<div class="top--navbar">
+		<a href="#home" class="logo">jeet's library</a>
+		<a href="#home" class="acive">Home</a>
+		<a href="#about">About Us</a>
+		<a href="#contact">Contact</a>
+    <div class="search--form">
+      <form action="">
+        		<input type="text" class="search--bar" placeholder="search..">
+           <button type="submit" class="search--btn">🔍</button>
+      </form>
+    </div>
+    <div class="message"></div>
+
+   
+        
+        </div>
+        <div class="library__head">
+          <h1>Jeet's Library</h1>
+           <hr>
+           <form  class="lib__form">
+             <div class="book__title">
+               <label for="">Book Title :</label>
+               <div>
+               <input type="text" id="book__name">
+               </div>
+               
+             </div>
+             <div class="book__author">
+               <label for="">Author's Name :</label>
+               <div>
+               <input type="text" id="author__name">
+               </div>
+             </div>
+             <fieldset class="form__data">
+               <div class="book__data">
+                 <legend class="type">Type :</legend>
+                 <div class="type__data">
+                   <input type="radio" value="fiction" name="books" class="book__fiction">
+                   <labe>fiction</labe>
+                 </div>
+               </div>
+               <div class="book__data">
+                 <div class="type__data">
+                   <input type="radio" value="novel" name="books" class="book__novels">
+                   <labe>novel</labe>
+                 </div>
+
+               </div>
+               <div class="book__data">
+                 <div class="type__data">
+                   <input type="radio" value="horror" name="books" class="book__horror">
+                   <labe>Horror & Thriller</labe>
+                 </div>
+
+               </div>
+
+             </fieldset>
+             <div class="add__books">
+               <button type="submit" class="add__btn">Add book</button>
+             </div>
+
+
+
+           </form>
+
+          <div id="table">
+            <h1>Your books</h1>
+            <hr>
+
+            <table class="table__data">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Type</th>
+                    </tr>
+                </thead>
+                <tbody id='tablebody></tbody>
+            </table>
+        </div>
+        </div>
+
+    
+    <script src="script.js" async></script>
+  </body>
+</html>
