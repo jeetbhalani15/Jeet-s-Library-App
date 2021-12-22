@@ -1,11 +1,11 @@
 *{
  padding: 0;
  margin: 0;
- background-color: #e9e9e9
+ /* background-color: #e9e9e9 */
 }
 .top--navbar{
   overflow: hidden;
-  background-color: #e9e9e9
+  background-color: #e6deb2;
 }
 
 .top--navbar a{
@@ -29,14 +29,14 @@
   color: white;
 }
 .search--bar {
-  border:none;
-  padding: 8px;
-  background-color: rgb(255, 251, 251)
+  border: none;
+  padding-top: 11px;
+  background-color: rgb(255, 251, 251);
 }
 .search--btn{
   float: right;
   margin: 0px;
-   padding: 8px;
+   padding: 5px;
    border : none;
    background-color:#d4d0d0 
 
@@ -49,4 +49,57 @@
   margin-right: 44px;
   font-size: 17px;
  } 
-  
+ h1{margin-bottom: 1em;}
+ .library__head{
+ display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-block: 5px;
+ 
+ }
+ .book__title{
+   font-size: large;
+ }
+ .alert{
+   width: 100%;
+   text-align: center;
+   height: 32px;
+   
+ }
+ .book__author{
+   font-size: large;
+ }
+ #author__name{
+   margin-bottom: 14px;
+   border-radius: 7px;
+   width: 34em;
+   border-style: dotted;
+ }
+ #book__name{
+   border-radius: 7px;
+   width: 34em;
+   border-style: dotted;
+ }
+ .form__data{
+  border: none;
+  font-size: larger;
+ }
+ .add__btn{
+  margin-block: 19px;
+ }
+ .table__data{
+   border-collapse: collapse;
+   width: 100%;
+ }
+ tr,th{
+   padding: 28px;
+   font-weight: normal;
+   text-align: left;
+
+ }
+ tr:nth-child(even){background-color: #f2f2f2;}
+ 
+ 

@@ -11,9 +11,9 @@ class Display {
     console.log('hello')
     let tableBody = document.getElementById('tablebody');
     let tableContent =  `<tr>
-                           <th scope="col">${book.name}</th>
-                           <th scope="col">${book.author}</th>
-                           <th scope="col">${book.type}</th>
+                           <th class="tabletitle scope="col">${book.name}</th>
+                           <th class="tabletitle scope="col">${book.author}</th>
+                           <th class="tabletitle scope="col">${book.type}</th>
                         </tr>`
     tableBody.innerHTML += tableContent;
     console.log('hello')
@@ -37,19 +37,19 @@ class Display {
   show(type) {
     let msg = document.getElementById('message')
     if (type==='Success') {
-      msg.innerHTML = `<div class="alert">
-     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-      <strong>Success!</strong> your book added sucessfullly 👍
-     </div>`
+      msg.innerHTML = `<div class="alert" style="background-color: #00ff848c;">
+                         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                         <strong>Success!</strong> your book added sucessfullly 👍
+                       </div>`
     } else {
-      msg.innerHTML = `<div class="alert">
-     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-     <strong>Error!</strong> Oops there was an error, plz try again😢
-     </div>`
+      msg.innerHTML = `<div class="alert" style="background-color: #ff0028c2; color: white;">
+                       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                       <strong>Error!</strong> Oops there was an error, plz try again😢
+                       </div>`
     }
     setTimeout(function () {
       msg.innerHTML = ""
-    }, 5000);
+    },5000);
 
 
   }
